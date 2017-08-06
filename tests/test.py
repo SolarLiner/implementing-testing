@@ -1,8 +1,8 @@
-import unittesting
+import unittest
 from src.secure_class import *
 
 class VeryImportantTestCase:
-     very_important = None
+    very_important = None
     def setup(self):
         print "VeryImportant module test"
         self.very_important = VeryImportant("Nathan")

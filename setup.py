@@ -13,9 +13,10 @@ setup(
     description="A VeryImportant module that needs to be thouroughly tested",
     long_description=read("README.md"),
     license="MIT",
-    keywords="example test unittesting github",
+    keywords="example test unittest github",
     packages=['src', 'tests'],
+    install_requires=['unittest']
     extras_require= {
-        'test': ["coverage", "python-coveralls"]
+        'test': ["pytest", "coverage", "python-coveralls"]
         }
 )
