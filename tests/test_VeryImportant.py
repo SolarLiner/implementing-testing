@@ -1,4 +1,3 @@
-import pytest
 from src.secure_class import *
 
 class TestVeryImportant(object):
