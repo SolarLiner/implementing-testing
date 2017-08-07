@@ -17,6 +17,17 @@
             "taskName": "clean",
             "command": "./scripts/clean.sh",
             "type": "shell"
+        },
+        {
+            "taskName": "coverage",
+            "command": "./scripts/coverage.sh",
+            "type": "shell"
+        },
+        {
+            "taskName": "all",
+            "type": "shell",
+            "command": "./scripts/all.sh",
+            "problemMatcher": []
         }
     ]
 }
