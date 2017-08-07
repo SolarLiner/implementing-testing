@@ -17,8 +17,14 @@ We'll first setup coverage on Coveralls, then on Codacy. I find it better to sta
 
 Coveralls's interface with python is `python-coveralls` which is easily installeable with `pip`. After that, create a configuration file for it by creating a new file at the root called `.coveralls.yml` and edit it to add your repo\_token. Find your repo\_token by going to the settings on the Coveralls project.
 
+Once everything is setup, just run  `coverage run $FILES && coverage xml && coveralls`
+
 ### Codacy
 
 In order to send coverage to Codacy you'll need to install the python package `codacy-coverage` or similar for your language In Ubuntu 16.04+, you'll need to install and activate `virtualenv` for your repository as to avoid conflicts with the patched version of pip Canonical offers.
 
-Then it's a matter of running your tests, `coverage run $FILES && coverage xml` and then `CODACY_PROJECT_TOKEN=$TOKEN python-codacy-coverage`. You can read more about setting up Codacy [here](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo).
+Then it's a matter of running your tests, `coverage run $FILES && coverage xml` and then `CODACY_PROJECT_TOKEN=$TOKEN python-codacy-coverage`. You can read more about setting up Codacy [here](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo).  
+Note that you don't need to run coverage twice, you can just chain codacy after coveralls.
+
+Although we focused on code coverage with Codacy, the service offers much more analytics of your code.  
+You don't need the two either, you can choose only one or the other: or a different service should one fit your needs better.
