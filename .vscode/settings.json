@@ -1,7 +1,6 @@
 {
     "python.unitTest.pyTestArgs": [
-        "tests/test.py"
+        "tests/*"
     ],
-    "python.unitTest.pyTestPath": "python -m pytest",
     "python.unitTest.pyTestEnabled": true
 }
