@@ -2,13 +2,7 @@ import pytest
 from src.secure_class import *
 
 class TestVeryImportant(object):
-    very_important = None
-    def setup(self):
-        print "VeryImportant module test"
-        self.very_important = VeryImportant("Nathan")
-    
-    def teardown(self):
-        pass # nothing to do here
+    very_important = VeryImportant("Nathan")
 
     def test_hello_static(self):
         print "Static hello()"
@@ -21,4 +15,4 @@ class TestVeryImportant(object):
 
     def test_class_str(self):
         print "Class __str__()"
-        assert vi.__str__() == "<VeryImportant: Nathan>"
+        assert very_important.__str__() == "<VeryImportant: Nathan>"
