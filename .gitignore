@@ -104,3 +104,5 @@ ENV/
 *.token
 
 \.coveralls\.yml
+
+coverage/
