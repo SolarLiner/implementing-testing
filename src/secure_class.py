@@ -16,4 +16,4 @@ class VeryImportant(object):
 
     def say_hello(self):
         """Instance method calling for name."""
-        return "hello {}!".format(self.name)
+        return "Hello {}!".format(self.name)
