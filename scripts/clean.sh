@@ -1,3 +1,4 @@
 #! /bin/sh
 
-rm **/*.py[cod] .cache/* .cache
+rm **/*.py[cod]
+rm -r .cache
