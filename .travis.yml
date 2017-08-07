@@ -1,6 +1,8 @@
+dist: xenial
 language: python
 python:
   - "2.7"
 
 install: pip install -r pip_req_test.txt
-script: scripts/all.sh
+script: python -m pytest
+after_success: scripts/coverage.sh
