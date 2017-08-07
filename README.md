@@ -36,3 +36,17 @@ Once you've activated Travis for your repo, check "build only if travis.yml is p
 
 ### Configuring Travis CI
 
+Since we have all our scripts ready, configuring Travis will be simple enough. Add a `.travis.yml` file at the root of your repo and add the following lines:
+```yaml
+dist: xenial
+language: python
+python:
+    - "2.7" # List all supported versions of python here
+
+install: pip install -r pip_req_test.txt
+script: scripts/test.sh
+after_success: scripts/coverage.sh
+```
+
+Change accordingly, but otherwise the configuration is there.  
+Note that the different build steps are ran in order: `install > script > after_success | after_failure`. For a complete doc about the configuration, refer to the Travis doc: <https://docs.travis-ci.com/user/customizing-the-build>
