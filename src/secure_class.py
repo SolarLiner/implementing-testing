@@ -14,6 +14,6 @@ class VeryImportant(object):
         """Static function saying hello."""
         return "Hello!"
 
-    def say_hello(self):
+    def say_hello_instance(self):
         """Instance method calling for name."""
         return "Hello {}!".format(self.name)

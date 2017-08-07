@@ -10,8 +10,8 @@ class TestVeryImportant(object):
     
     def test_hello_instance(self):
         print "Instance hello()"
-        assert self.very_important.say_hello() == "Hello Nathan!"
-        assert self.very_important.say_hello() != "Hello John Doe!" # Default case in constructor
+        assert self.very_important.say_hello_instance() == "Hello Nathan!"
+        assert self.very_important.say_hello_instance() != "Hello John Doe!" # Default case in constructor
 
     def test_class_str(self):
         print "Class __str__()"
