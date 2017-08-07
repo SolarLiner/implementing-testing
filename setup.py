@@ -15,7 +15,7 @@ setup(
     license="MIT",
     keywords="example test unittest github",
     packages=['src', 'tests'],
-    install_requires=['unittest']
+    install_requires=['unittest'],
     extras_require={
         'test': ["pytest", "coverage", "python-coveralls"]
         }
