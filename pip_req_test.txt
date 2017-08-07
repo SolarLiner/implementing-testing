@@ -1,0 +1,4 @@
+pytest
+coverage
+codacy-coverage
+python-coveralls
