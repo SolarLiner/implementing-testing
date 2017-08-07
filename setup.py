@@ -16,7 +16,7 @@ setup(
     keywords="example test unittest github",
     packages=['src', 'tests'],
     install_requires=['unittest']
-    extras_require= {
+    extras_require={
         'test': ["pytest", "coverage", "python-coveralls"]
         }
 )
