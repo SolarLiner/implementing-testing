@@ -1,3 +1,4 @@
+#! /bin/sh
 
 coverage run src/*
 coverage xml
