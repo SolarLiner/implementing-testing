@@ -34,7 +34,7 @@ You don't need the two either, you can choose only one or the other: or a differ
 Now that we have everything ready, we'll strap Travis CI onto our repo. For the end user, Travis will be the most important part of the project as it will be able to test and build your project for you.  
 Once you've activated Travis for your repo, check "build only if travis.yml is present" and maybe activate a daily or weekly build of your project, depending on how often it is updated.
 
-### Configuring Travis CI
+### Configuring Travis CI [![Build Status](https://travis-ci.org/SolarLiner/implementing-testing.svg?branch=master)](https://travis-ci.org/SolarLiner/implementing-testing)
 
 Since we have all our scripts ready, configuring Travis will be simple enough. Add a `.travis.yml` file at the root of your repo and add the following lines:
 ```yaml
