@@ -1,7 +1,7 @@
 import pytest
 from src.secure_class import *
 
-class VeryImportantTestCase(object):
+class TestVeryImportant(object):
     very_important = None
     def setup(self):
         print "VeryImportant module test"
