@@ -2,5 +2,6 @@
     "python.unitTest.pyTestArgs": [
         "tests/test.py"
     ],
+    "python.unitTest.pyTestPath": "python -m pytest",
     "python.unitTest.pyTestEnabled": true
 }
