@@ -10,6 +10,7 @@ class VeryImportant(object):
     def __str__(self):
         return "<VeryImportant: {}>".format(self.name)
 
+    @staticmethod
     def say_hello():
         """Static function saying hello."""
         return "Hello!"

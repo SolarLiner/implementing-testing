@@ -15,4 +15,4 @@ class TestVeryImportant(object):
 
     def test_class_str(self):
         print "Class __str__()"
-        assert very_important.__str__() == "<VeryImportant: Nathan>"
+        assert self.very_important.__str__() == "<VeryImportant: Nathan>"
