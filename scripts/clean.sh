@@ -1,4 +1,4 @@
 #! /bin/sh
 
-rm **/*.py[cod]
+rm **/*.py[cod] .coverage coverage.xml
 rm -r .cache
